@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.hol.cgrapp.cooperativaguarairarepano.DriverLoginActivity"
+    android:orientation="vertical"
+    android:background="#1c1d26"
+    android:padding="40sp">
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conductor"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:padding="25sp"/>
+    <EditText
+        android:padding="7sp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="correo electronico"
+        android:id="@+id/email"
+        android:layout_margin="20sp"/>
+
+    <EditText
+        android:padding="7sp"
+        android:background="#ffffff"
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="contraseña"
+        android:id="@+id/password"/>
+
+    <Button
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="iniciar sesión"
+        android:id="@+id/login"
+        android:layout_margin="20sp"/>
+
+    <Button
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="registrar"
+        android:id="@+id/registration"
+        android:layout_margin="20sp"/>
+</LinearLayout>

@@ -1,0 +1,199 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.hol.cgrapp.cooperativaguarairarepano.CustomerLoginActivity"
+    android:padding="5sp"
+    android:orientation="vertical"
+    android:background="#1c1d26">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="53sp"
+        map:cameraBearing="112.5"
+        map:cameraTargetLat="-33.796923"
+        map:cameraTargetLng="150.922433"
+        map:cameraTilt="30"
+        map:cameraZoom="13"
+        map:mapType="normal"
+        map:uiCompass="false"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="false"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="false"
+        map:uiZoomGestures="true"
+       />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttons">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginTop="3sp"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton"
+                android:text="Cerrar Sesión"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:background="@drawable/mybutton"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/history"
+                android:text="historial"
+                android:layout_marginBottom="13sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginTop="3sp"/>
+
+            <Button
+                android:background="@drawable/mybutton"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings"
+                android:text="Perfil"
+                android:layout_marginBottom="13sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginTop="3sp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="45sp">
+    <LinearLayout
+        android:background="#1c1d26"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driverInfo"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/driverProfileImage"
+        android:src="@mipmap/ic_default_user"
+        android:padding="20sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="40sp">
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverName"
+            android:paddingBottom="10sp"
+            android:paddingTop="20sp"/>
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverPhone"
+            android:paddingBottom="10sp"
+            android:paddingTop="20sp"/>
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverCar"
+            android:paddingBottom="10sp"
+            android:paddingTop="20sp"
+            />
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverNumber"
+            android:paddingBottom="10sp"
+            android:paddingTop="20sp"
+            />
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driverColor"
+            android:paddingBottom="10sp"
+            android:paddingTop="20sp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/request"
+        android:text="Pedir un Taxi"
+        android:layout_gravity="bottom"
+        />
+
+    <TextView
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="180sp"
+        android:padding="10sp"
+        android:layout_height="40sp"
+        android:text="Numero de pasajeros"/>
+<EditText
+    android:background="#ffffff"
+    android:textColorHint="#000000"
+    android:textColor="#ffffff"
+    android:layout_width="wrap_content"
+    android:layout_height="40sp"
+    android:layout_marginTop="180sp"
+    android:padding="10sp"
+    android:layout_marginLeft="150sp"
+    android:id="@+id/passagers"
+    android:hint="Nº1-4"
+    android:inputType="number"/>
+
+
+
+
+</FrameLayout>
+

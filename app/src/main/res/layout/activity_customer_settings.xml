@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.hol.cgrapp.cooperativaguarairarepano.CustomerSettingsActivity"
+    android:padding="20sp"
+    android:orientation="vertical"
+    android:background="#1c1d26">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/profileImage"
+        android:src="@mipmap/ic_default_user"
+        android:layout_marginBottom="20sp"
+
+        />
+
+    <EditText
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Nombre"
+        android:layout_marginBottom="20sp" />
+
+    <EditText
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Teléfono"
+        android:layout_marginBottom="20sp"
+        android:inputType="number"/>
+
+    <Button
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:text="Confirmar"
+        android:layout_marginBottom="10sp"/>
+
+    <Button
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:text="Regresar" />
+
+
+
+</LinearLayout>

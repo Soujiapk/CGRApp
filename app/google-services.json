@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "356144847154",
+    "firebase_url": "https://cgrapp2.firebaseio.com",
+    "project_id": "cgrapp2",
+    "storage_bucket": "cgrapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356144847154:android:b179d565b62cebe3",
+        "android_client_info": {
+          "package_name": "es.hol.cgrapp.cooperativaguarairarepano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356144847154-ld4qamanijjeqls5p42tc9qm686b6s2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.hol.cgrapp.cooperativaguarairarepano",
+            "certificate_hash": "30382eec7ba2517960be1cdc600c949c1c7532c4"
+          }
+        },
+        {
+          "client_id": "356144847154-nv5ngmupnakfvpo5f2jqt1vkk2b5ui5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj50yT_UHj5GENotjuMwViKyCM_00j7kQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356144847154-nv5ngmupnakfvpo5f2jqt1vkk2b5ui5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
